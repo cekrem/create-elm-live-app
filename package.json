@@ -1,8 +1,10 @@
 {
   "name": "create-elm-live-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Set up a modern elm app by running one command.",
-  "bin": "./index.sh",
+  "bin": {
+    "create-elm-live-app": "index.sh"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/cekrem/create-elm-live-app.git"
@@ -15,9 +17,6 @@
   "author": {
     "name": "Christian Ekrem",
     "email": "christianekrem@gmail.com"
-  },
-  "bin": {
-    "create-elm-live-app": "./index.sh"
   },
   "license": "ISC"
 }

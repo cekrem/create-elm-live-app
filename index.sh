@@ -130,4 +130,4 @@ view model =
 
 EOL
 
-echo "`cd $project_dir` and do `npm run dev` to start hacking!"
+echo "'cd $project_dir' and do 'npm run dev' to start hacking!"

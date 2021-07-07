@@ -1,6 +1,6 @@
 {
   "name": "create-elm-live-app",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Set up a modern elm app by running one command.",
   "bin": {
     "create-elm-live-app": "index.sh"

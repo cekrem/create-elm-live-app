@@ -1,15 +1,15 @@
 #!/bin/sh
 set -e
 
-project_dir=$1
+project_dir="$1"
 
-mkdir $project_dir
-cd $project_dir
+mkdir "$project_dir"
+cd "$project_dir"
 
 echo "initializing '$project_dir'"
 git init > /dev/null
 
-PORT='$PORT'
+PORT="$PORT"
 
 cat > package.json << EOL
 {
@@ -40,7 +40,7 @@ echo "installing dependencies"
 npm install --save-dev elm-tooling elm-live > /dev/null
 npm install --save http-server > /dev/null
 
-export PATH=$PATH:node_modules/.bin
+export PATH="$PATH":node_modules/.bin
 
 yes | elm-tooling init > /dev/null
 elm-tooling install > /dev/null
